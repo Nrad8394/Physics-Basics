@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 250" font-family="sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+    </marker>
+  </defs>
+  <rect width="680" height="250" rx="8" fill="#ffffff" stroke="#d0d0d8"/>
+  <text x="24" y="34" fill="#333" font-size="15" font-weight="bold">Energy chain of a harvesting speed bump (per car pass)</text>
+  <!-- boxes -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="24" y="70" width="110" height="58" rx="6" fill="#3f51b5" fill-opacity="0.12" stroke="#3f51b5" stroke-width="1.5"/>
+    <text x="79" y="94" fill="#333">car KE</text>
+    <text x="79" y="112" fill="#333" font-weight="bold">~100 kJ</text>
+    <rect x="168" y="70" width="110" height="58" rx="6" fill="#3f51b5" fill-opacity="0.12" stroke="#3f51b5" stroke-width="1.5"/>
+    <text x="223" y="88" fill="#333">plate stroke</text>
+    <text x="223" y="104" fill="#333">mgh, 2 axles</text>
+    <text x="223" y="120" fill="#333" font-weight="bold">~700 J</text>
+    <rect x="312" y="70" width="110" height="58" rx="6" fill="#3f51b5" fill-opacity="0.12" stroke="#3f51b5" stroke-width="1.5"/>
+    <text x="367" y="88" fill="#333">mechanism</text>
+    <text x="367" y="104" fill="#333">&#215; ~0.7</text>
+    <text x="367" y="120" fill="#333" font-weight="bold">~490 J</text>
+    <rect x="456" y="70" width="110" height="58" rx="6" fill="#3f51b5" fill-opacity="0.12" stroke="#3f51b5" stroke-width="1.5"/>
+    <text x="511" y="88" fill="#333">generator</text>
+    <text x="511" y="104" fill="#333">&#215; ~0.8</text>
+    <text x="511" y="120" fill="#333" font-weight="bold">~390 J</text>
+    <rect x="596" y="70" width="64" height="58" rx="6" fill="#43a047" fill-opacity="0.15" stroke="#43a047" stroke-width="1.5"/>
+    <text x="628" y="88" fill="#333">stored</text>
+    <text x="628" y="104" fill="#333">&#215; ~0.9</text>
+    <text x="628" y="120" fill="#2e7d32" font-weight="bold">~350 J</text>
+  </g>
+  <!-- arrows between boxes -->
+  <g stroke="#333" stroke-width="2">
+    <line x1="134" y1="99" x2="164" y2="99" marker-end="url(#ar)"/>
+    <line x1="278" y1="99" x2="308" y2="99" marker-end="url(#ar)"/>
+    <line x1="422" y1="99" x2="452" y2="99" marker-end="url(#ar)"/>
+    <line x1="566" y1="99" x2="592" y2="99" marker-end="url(#ar)"/>
+  </g>
+  <!-- loss arrows -->
+  <g stroke="#e53935" stroke-width="1.5">
+    <line x1="367" y1="128" x2="367" y2="158" marker-end="url(#ar)"/>
+    <line x1="511" y1="128" x2="511" y2="158" marker-end="url(#ar)"/>
+  </g>
+  <text x="330" y="176" fill="#e53935" font-size="12">friction, heat</text>
+  <text x="478" y="176" fill="#e53935" font-size="12">electrical losses</text>
+  <text x="24" y="176" fill="#666" font-size="13">the bump only taps ~0.7% of</text>
+  <text x="24" y="192" fill="#666" font-size="13">the car&#8217;s kinetic energy</text>
+  <text x="24" y="228" fill="#333" font-size="14">Efficiencies multiply: 0.7 &#215; 0.8 &#215; 0.9 &#8776; 0.5 &#8212; half the captured stroke energy reaches storage.</text>
+</svg>
