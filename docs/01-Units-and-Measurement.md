@@ -61,8 +61,10 @@ every result you derive.
 
 ## 1.4 Significant figures and honest precision
 
-- Your answer can't be more precise than your worst input. If a car's mass is
-  "about 1500 kg", quoting energy as 4417.238 J is fiction — say 4.4 kJ.
+- Your answer can't be more precise than your worst input. Example: a car of
+  mass "about 1500 kg" rolls at 2.43 m/s. The calculator says
+  KE = ½ × 1500 × 2.43² = 4428.675 J — but the mass is only known to 2
+  significant figures, so most of those digits are fiction. Quote **4.4 kJ**.
 - Keep extra digits *during* a calculation; round only at the end.
 - In rough engineering estimates, 2 significant figures is usually right.
 
