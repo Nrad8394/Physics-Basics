@@ -44,8 +44,11 @@ Energy sloshes between kinetic and spring potential, total constant:
 All potential at the extremes, all kinetic at the centre.
 
 **Worked example.** A 0.5 kg mass on a k = 200 N/m spring, pulled 10 cm and
-released. ω = √(200/0.5) = 20 rad/s, T ≈ 0.31 s.
-E = ½ × 200 × 0.01 = 1 J. v_max = ωA = **2 m/s**.
+released.
+
+    ω = √(k/m)  = √(200/0.5) = 20 rad/s      →  T = 2π/ω ≈ 0.31 s
+    E = ½kA²    = ½ × 200 × 0.1²  = 1 J
+    v_max = ωA  = 20 × 0.1        = 2 m/s
 
 ## 8.3 The pendulum
 
@@ -62,8 +65,13 @@ CC BY-SA 3.0.*
 Independent of mass *and* (for small angles) amplitude — which is why
 pendulum clocks worked. Note the twin: spring T uses m/k, pendulum uses L/g.
 
-**Worked example.** A 1 m pendulum: T = 2π√(1/9.8) ≈ **2.0 s**. This also
-gives a way to *measure g*: time 20 swings, get T, solve g = 4π²L/T².
+**Worked example.** A 1 m pendulum:
+
+    Formula:    T = 2π√(L/g)
+    Substitute: T = 2π√(1/9.8) ≈ 2.0 s
+
+This also gives a way to *measure g*: time 20 swings, get T, solve
+g = 4π²L/T².
 
 ## 8.4 Damping
 
@@ -122,8 +130,9 @@ your mechanism's own resonance sets how well it converts it.)
    a_max.
 4. An SHM system has E = 0.5 J and k = 100 N/m. Amplitude? Speed at x = A/2
    if m = 0.25 kg?
-5. A car (1200 kg on 4 springs, effective k_total = 48 kN/m) crosses bumps
-   spaced 8 m apart. At what speed does it resonate?
+5. The standard 1500 kg car (effective suspension stiffness
+   k_total = 60 kN/m) crosses bumps spaced 8 m apart. At what speed does it
+   resonate?
 
 ??? success "Answers"
 
@@ -133,7 +142,7 @@ your mechanism's own resonance sets how well it converts it.)
        **7.9 m/s²** (~0.8 g).
     4. A = √(2E/k) = **0.1 m**. At x = A/2: PE = ½k(A/2)² = 0.125 J, so
        KE = 0.375 J → v = √(2×0.375/0.25) ≈ **1.73 m/s**.
-    5. f₀ = (1/2π)√(48000/1200) = (1/2π)×6.32 ≈ 1.0 Hz. Resonance at v = f₀×d =
-       **8 m/s ≈ 29 km/h** — right in the range drivers actually use, which is
-       the point.
+    5. f₀ = (1/2π)√(k/m) = (1/2π)√(60000/1500) = (1/2π)×6.32 ≈ 1.0 Hz.
+       Resonance at v = f₀×d = **8 m/s ≈ 29 km/h** — right in the range
+       drivers actually use, which is the point.
 

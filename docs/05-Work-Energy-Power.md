@@ -18,7 +18,9 @@ Work is force applied through a displacement:
   rolling wheel and gravity on a horizontally moving car do no work.
 
 **Worked example.** Push a crate 5 m with 100 N at 30° above horizontal:
-W = 100 × 5 × cos 30° ≈ **433 J**.
+
+    Formula:    W = F d cos θ
+    Substitute: W = 100 × 5 × cos 30° ≈ 433 J
 
 ## 5.2 Kinetic energy and the work–energy theorem
 
@@ -28,8 +30,12 @@ The work–energy theorem: **net work done on an object = its change in KE.**
 
     W_net = ΔKE = ½mv_f² − ½mv₀²
 
-**Worked example.** A 1500 kg car at 50 km/h (13.9 m/s):
-KE = ½ × 1500 × 13.9² ≈ **145 kJ**. At 100 km/h it's 4× that (~580 kJ) —
+**Worked example.** The standard 1500 kg car at 36 km/h (10 m/s):
+
+    Formula:    KE = ½mv²
+    Substitute: KE = ½ × 1500 × 10² = 75,000 J = 75 kJ
+
+At 72 km/h (20 m/s) it's exactly 4× that: ½ × 1500 × 20² = **300 kJ** —
 energy scales with v². This is the deep reason speed kills: doubling speed
 quadruples the energy that must go *somewhere* in a crash.
 
@@ -56,13 +62,21 @@ term (the "missing" energy becomes heat, sound, deformation):
 ![Energy exchange between PE and KE along a hill track](img/energy-hill.svg){ style="max-width:560px" }
 
 **Worked example — pendulum/slide.** A child slides from rest down a
-frictionless 3 m high slide: mgh = ½mv² → v = √(2gh) = √(58.8) ≈ **7.7 m/s**,
-regardless of the slide's shape or the child's mass.
+frictionless 3 m high slide.
+
+    Formula:    mgh = ½mv²  →  v = √(2gh)     (mass cancels)
+    Substitute: v = √(2 × 9.8 × 3) = √58.8 ≈ 7.7 m/s
+
+— regardless of the slide's shape or the child's mass.
 
 **Worked example — the speed-bump harvester budget.** A 1500 kg car (per-axle
 ≈ 750 kg per wheel pair) drives over a bump whose top plate depresses
 h = 5 cm under the wheel load. Energy delivered to the plate per axle:
-E ≈ mgh = 750 × 9.8 × 0.05 ≈ 368 J. Two axles → ~700 J mechanical *available*
+
+    Formula:    E ≈ mgh
+    Substitute: E = 750 × 9.8 × 0.05 ≈ 368 J
+
+Two axles → ~700 J mechanical *available*
 per pass, before losses. A generator chain at 20–50% overall efficiency gives
 ~150–350 J electrical — which is why the working figure of **50–300 J per
 pass** is physically honest, and why nobody powers a neighbourhood with speed
@@ -83,7 +97,9 @@ peak power at high speed (drag ∝ v², so P_drag ∝ v³) and why the same engi
 climbs slowly up steep hills.
 
 **Worked example.** Lifting 200 kg of water 10 m in 20 s:
-P = mgh/t = 200×9.8×10/20 = **980 W** ≈ 1.3 horsepower (1 hp ≈ 746 W).
+
+    Formula:    P = ΔE/t = mgh/t
+    Substitute: P = 200 × 9.8 × 10 / 20 = 980 W ≈ 1.3 hp   (1 hp ≈ 746 W)
 
 **Worked example — average vs peak.** Your harvester delivers ~250 J per pass.
 If the pass compresses the plate in 0.2 s, *peak* power is 250/0.2 ≈ 1.2 kW —
@@ -112,8 +128,9 @@ energy-harvesting design.
 
 1. How much work does gravity do on a 2 kg book falling 1.5 m? How fast is it
    moving at the bottom (from rest)?
-2. A 1000 kg car goes from 0 to 100 km/h. How much kinetic energy did it gain?
-   If it took 10 s, what average power went into motion (ignore losses)?
+2. The standard 1500 kg car goes from 0 to 108 km/h. How much kinetic energy
+   did it gain? If it took 10 s, what average power went into motion (ignore
+   losses)?
 3. A roller coaster car starts at rest 40 m up. Speed at the bottom
    (frictionless)? Speed at a second hill 15 m high?
 4. A bump harvester yields 120 J per vehicle at a site with 4,000 vehicles per
@@ -123,8 +140,9 @@ energy-harvesting design.
 ??? success "Answers"
 
     1. W = mgh = 2×9.8×1.5 = **29.4 J**; ½mv² = 29.4 → v = **5.4 m/s**.
-    2. ΔKE = ½×1000×27.8² ≈ **386 kJ**; P ≈ **38.6 kW** (~52 hp — real engines
-       are bigger because of drag, drivetrain losses, and non-flat torque).
+    2. 108 km/h = 30 m/s. ΔKE = ½mv² = ½×1500×30² = **675 kJ**;
+       P = ΔE/t = 675/10 = **67.5 kW** (~90 hp — real engines are bigger
+       because of drag, drivetrain losses, and non-flat torque).
     3. v = √(2g×40) = **28 m/s**; at 15 m: v = √(2g×25) = **22 m/s** (only the
        height *drop* matters).
     4. 4000×120 J = 480 kJ/day → average **5.6 W**; 480,000/3600 = **133 Wh/day**.

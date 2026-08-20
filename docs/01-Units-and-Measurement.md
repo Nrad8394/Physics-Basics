@@ -37,12 +37,19 @@ of *energy*, not power: 1 kWh = 1000 W × 3600 s = 3.6 × 10⁶ J = 3.6 MJ.
 
 Multiply by fractions equal to 1 until the units you don't want cancel.
 
-**Worked example.** Convert 60 km/h to m/s.
+**Worked example.** Convert 72 km/h to m/s.
 
-    60 km/h × (1000 m / 1 km) × (1 h / 3600 s) = 60 × 1000/3600 m/s ≈ 16.7 m/s
+    72 km/h × (1000 m / 1 km) × (1 h / 3600 s) = 72 × 1000/3600 m/s = 20 m/s
 
-Handy shortcut: **km/h ÷ 3.6 = m/s**. So 36 km/h = 10 m/s, 72 km/h = 20 m/s.
-This one is worth memorising — traffic-speed problems come up constantly.
+Handy shortcut: **km/h ÷ 3.6 = m/s**. So 36 km/h = 10 m/s, 72 km/h = 20 m/s,
+108 km/h = 30 m/s. Worth memorising — traffic-speed problems come up
+constantly.
+
+**Standard numbers used in this book.** To keep the arithmetic out of the way,
+worked examples reuse the same clean inputs wherever possible: a **1500 kg
+car** and the shortcut speeds **10, 20, 30 m/s** (= 36, 72, 108 km/h). If you
+know KE = ½mv² gives 75 kJ for the standard car at 10 m/s, you can sanity-check
+half the examples in this book in your head.
 
 ## 1.3 Dimensional analysis — the free error detector
 
@@ -61,10 +68,16 @@ every result you derive.
 
 ## 1.4 Significant figures and honest precision
 
-- Your answer can't be more precise than your worst input. Example: a car of
-  mass "about 1500 kg" rolls at 2.43 m/s. The calculator says
-  KE = ½ × 1500 × 2.43² = 4428.675 J — but the mass is only known to 2
-  significant figures, so most of those digits are fiction. Quote **4.4 kJ**.
+- Your answer can't be more precise than your worst input. Example: our
+  standard car, mass "about 1500 kg", drives at 36 km/h = 10 m/s.
+
+      Formula:    KE = ½mv²
+      Substitute: KE = ½ × 1500 × 10² = 75,000 J
+
+  Writing "75,000 J" implies you know all five digits, but a mass known only
+  "about" to 2 significant figures earns 2 figures: quote **75 kJ**. (If the
+  mass were really 1483 kg, the true answer would be 74 kJ — the trailing
+  digits were never real.)
 - Keep extra digits *during* a calculation; round only at the end.
 - In rough engineering estimates, 2 significant figures is usually right.
 
@@ -75,8 +88,8 @@ computed result disagrees wildly with your estimate, one of them is wrong —
 and it's usually the calculation (a unit slip, a lost factor of 1000).
 
 **Worked example.** How much kinetic energy does a car at urban speed carry?
-Car ≈ 1000–2000 kg, urban speed ≈ 10–15 m/s. KE = ½mv² ≈ ½ × 1500 × 12²
-≈ 10⁵ J ≈ 100 kJ. So when you later compute a speed-bump harvester yield of
+Car ≈ 1500 kg, urban speed ≈ 10 m/s. KE = ½mv² = ½ × 1500 × 10²
+= 75 kJ ≈ 10⁵ J. So when you later compute a speed-bump harvester yield of
 50–300 J per pass, you immediately know it's a tiny slice (~0.1–0.3%) of the
 car's kinetic energy — which passes the sanity check: the bump barely slows
 the car.

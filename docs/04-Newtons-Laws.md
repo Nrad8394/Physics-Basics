@@ -50,17 +50,22 @@ exerts on other things), choose axes (tilt them along an incline), then write
 
 **Worked example — block on an incline.** A 10 kg block on a frictionless 30°
 slope. Axes along/perpendicular to slope.
-Along: mg sin θ = ma → a = g sin 30° = **4.9 m/s²** down the slope.
-Perpendicular: N = mg cos 30° ≈ 84.9 N.
+
+    Along slope:    ΣF = ma  →  mg sin θ = ma  →  a = g sin 30° = 4.9 m/s²
+    Perpendicular:  N = mg cos θ = 10 × 9.8 × cos 30° ≈ 84.9 N
 
 **Worked example — friction.** Same block, but µ_k = 0.2.
-Friction f = µ_k N = 0.2 × 84.9 ≈ 17 N up the slope.
-ma = mg sin θ − f → a = 4.9 − 1.7 = **3.2 m/s²**.
+
+    Friction:    f = µ_k N = 0.2 × 84.9 ≈ 17 N (up the slope)
+    Along slope: ma = mg sin θ − f  →  a = 4.9 − 17/10 = 3.2 m/s²
 
 **Worked example — will it move at all?** Push a 20 kg crate with 50 N
-horizontally; µ_s = 0.3. Max static friction = 0.3 × 20 × 9.8 = 58.8 N > 50 N,
-so the crate **doesn't move** and friction is exactly 50 N (it matches you,
-up to its ceiling).
+horizontally; µ_s = 0.3.
+
+    Ceiling: f_s,max = µ_s N = µ_s mg = 0.3 × 20 × 9.8 = 58.8 N
+
+58.8 N > 50 N, so the crate **doesn't move** and friction is exactly 50 N
+(it matches you, up to its ceiling).
 
 ## 4.4 Apparent weight
 
@@ -84,10 +89,13 @@ real force points inward (tension, gravity, friction, normal force).
 ![Circular motion: velocity tangent, acceleration toward the centre](img/circular-motion.svg){ style="max-width:340px" }
 
 **Worked example.** A car takes a flat bend of radius 50 m. Friction supplies
-the centripetal force: µmg ≥ mv²/r → v_max = √(µgr). With µ = 0.7:
-v_max = √(0.7×9.8×50) ≈ 18.5 m/s ≈ **67 km/h**. On a wet road (µ ≈ 0.4) it
-drops to 14 m/s ≈ 50 km/h. Mass cancels — the limit is the same for a truck
-and a hatchback.
+the centripetal force.
+
+    Formula:    µmg ≥ mv²/r  →  v_max = √(µgr)     (mass cancels)
+    Substitute: v_max = √(0.7 × 9.8 × 50) ≈ 18.5 m/s ≈ 67 km/h
+
+On a wet road (µ ≈ 0.4) it drops to 14 m/s ≈ 50 km/h. Because mass cancels,
+the limit is the same for a truck and a hatchback.
 
 ## Common pitfalls
 
@@ -102,8 +110,8 @@ and a hatchback.
 1. Net force of 300 N on an 80 kg motorbike+rider. Acceleration?
 2. A 5 kg block hangs from two ropes, each at 45° from the ceiling. Tension in
    each rope?
-3. A 1200 kg car brakes with locked wheels on dry tarmac, µ_k = 0.7. Find the
-   deceleration and stopping distance from 60 km/h.
+3. A 1500 kg car brakes with locked wheels on dry tarmac, µ_k = 0.7. Find the
+   deceleration and stopping distance from 72 km/h.
 4. A bucket is swung in a vertical circle of radius 1 m. Minimum speed at the
    top so the water stays in?
 5. A 10 kg box on a horizontal floor, µ_s = 0.5, µ_k = 0.3. You push with
@@ -114,7 +122,8 @@ and a hatchback.
     1. a = 300/80 = **3.75 m/s²**.
     2. Each rope's vertical component holds half the weight:
        T sin 45° = mg/2 → T = 5×9.8/(2×0.707) ≈ **34.6 N**.
-    3. a = µg = 6.86 m/s²; Δx = v²/2a = 16.7²/13.7 ≈ **20 m**. (Mass cancels.)
+    3. a = µg = 0.7 × 9.8 = **6.86 m/s²**; Δx = v²/2a = 20²/13.7 ≈ **29 m**.
+       (Mass cancels — the 1500 kg never gets used.)
     4. At the top gravity supplies the centripetal force: mg = mv²/r →
        v = √(gr) = **3.13 m/s**.
     5. Max static = 0.5×98 = 49 N. At 40 N: doesn't move, friction = **40 N**,

@@ -39,8 +39,13 @@ perpendicular to the door, not along it.
 ![Torque on a spanner: force times lever arm](img/torque-lever.svg){ style="max-width:500px" }
 
 **Worked example.** Tightening a bolt with a 0.3 m spanner, pushing 50 N
-perpendicular: τ = 0.3 × 50 = **15 N·m**. Slip a pipe over the spanner to
-double its length → double the torque for the same push.
+perpendicular:
+
+    Formula:    τ = r F sin θ    (θ = 90°, so sin θ = 1)
+    Substitute: τ = 0.3 × 50 = 15 N·m
+
+Slip a pipe over the spanner to double its length → double the torque for
+the same push.
 
 ## 7.3 Moment of inertia
 
@@ -80,8 +85,12 @@ public domain.*
 down the same ramp. The sphere wins, hoop loses, *regardless of mass or
 radius*: more of the hoop's energy budget is tied up in rotation
 (I is larger relative to mr²), leaving less for forward speed.
-For a disc from height h: mgh = ½mv² + ½(½mr²)(v/r)² = ¾mv² →
-v = √(4gh/3), about 82% of the frictionless-slide speed.
+For a disc from height h:
+
+    Formula:    mgh = ½mv² + ½Iω²   with  I = ½mr²,  ω = v/r
+    Simplify:   mgh = ½mv² + ¼mv² = ¾mv²   →   v = √(4gh/3)
+
+— about 82% of the frictionless-slide speed √(2gh).
 
 ## 7.5 Angular momentum
 
@@ -102,9 +111,13 @@ Pick the pivot cleverly — put it where an unknown force acts, and that force
 drops out of the torque equation.
 
 **Worked example — the plank.** A 4 m, 20 kg plank rests on two supports at
-its ends; a 60 kg person stands 1 m from the left end. Torques about the left
-support: R_right × 4 = 20g × 2 + 60g × 1 → R_right = (392 + 588)/4 = 245 N.
-Then ΣF = 0 gives R_left = (80×9.8) − 245 = **539 N**.
+its ends; a 60 kg person stands 1 m from the left end.
+
+    Στ = 0 about the left support (kills the unknown R_left):
+        R_right × 4 = 20g × 2 + 60g × 1
+        R_right = (392 + 588) / 4 = 245 N
+    ΣF = 0:
+        R_left = total weight − R_right = 80 × 9.8 − 245 = 539 N
 
 ## Common pitfalls
 

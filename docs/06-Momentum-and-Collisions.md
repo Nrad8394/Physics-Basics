@@ -20,9 +20,14 @@ force for a long time. This one idea explains most safety engineering:
 - A cricketer pulling their hands back while catching: same.
 - Hitting a rigid wall vs a haystack: same Δp, wildly different peak force.
 
-**Worked example.** A 1200 kg car at 15 m/s stops. Δp = 18,000 kg·m/s either
-way. Against a rigid wall (Δt ≈ 0.1 s): F ≈ 180 kN. With crumple zones
-(Δt ≈ 0.5 s): F ≈ 36 kN. Five times gentler, identical physics.
+**Worked example.** The standard 1500 kg car at 20 m/s (72 km/h) stops.
+
+    Formula:    Δp = mΔv,  then  F = Δp/Δt
+    Substitute: Δp = 1500 × 20 = 30,000 kg·m/s  (either way it stops)
+    Rigid wall  (Δt ≈ 0.1 s):  F = 30,000/0.1 = 300 kN
+    Crumple zone (Δt ≈ 0.5 s): F = 30,000/0.5 = 60 kN
+
+Five times gentler, identical physics.
 
 ## 6.3 Conservation of momentum
 
@@ -44,16 +49,25 @@ each component.
 | Inelastic | conserved | some lost (heat, deformation, sound) |
 | Perfectly inelastic (stick together) | conserved | maximum loss |
 
-**Worked example — perfectly inelastic.** A 1500 kg car at 20 m/s rear-ends a
-stationary 1000 kg car; they lock together.
-v′ = (1500×20)/(2500) = **12 m/s**.
-KE before: 300 kJ. After: ½×2500×144 = 180 kJ. **120 kJ (40%) destroyed** —
-that's the bent metal.
+**Worked example — perfectly inelastic.** The standard 1500 kg car at 20 m/s
+(72 km/h) rear-ends a stationary 1000 kg car; they lock together.
+
+    Formula:    m₁v₁ = (m₁ + m₂)v′  →  v′ = m₁v₁ / (m₁ + m₂)
+    Substitute: v′ = 1500 × 20 / 2500 = 12 m/s
+
+    KE before: ½ × 1500 × 20² = 300 kJ
+    KE after:  ½ × 2500 × 12² = 180 kJ
+
+**120 kJ (40%) destroyed** — that's the bent metal.
 
 ![Before and after of a perfectly inelastic collision](img/inelastic-collision.svg){ style="max-width:520px" }
 
 **Worked example — recoil.** A 4 kg rifle fires a 10 g bullet at 800 m/s.
-0 = 0.01×800 + 4×v → v = **−2 m/s** (recoil). Note the KE is wildly unequal
+
+    Formula:    total p before = total p after:  0 = m_b v_b + m_r v_r
+    Substitute: 0 = 0.01 × 800 + 4 × v_r  →  v_r = −2 m/s (recoil)
+
+Note the KE is wildly unequal
 (bullet 3200 J, rifle 8 J) even though momenta are equal and opposite — KE
 scales as p²/2m, so the light object carries almost all the energy.
 

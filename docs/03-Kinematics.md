@@ -44,17 +44,24 @@ identify what you want, pick the equation containing exactly those.
 | (3) | t |
 | (4) | a |
 
-**Worked example — braking distance.** A car at 60 km/h (16.7 m/s) brakes at
-a = −6 m/s². How far until it stops?
-Know: v₀ = 16.7, v = 0, a = −6. Want Δx, don't care about t → equation (3):
-0 = 16.7² + 2(−6)Δx → Δx = 278/12 ≈ **23 m**. Note the v² : braking distance
-scales with the *square* of speed — double the speed, quadruple the distance.
-(This is exactly why speed bumps exist.)
+**Worked example — braking distance.** A car at 72 km/h (= 20 m/s) brakes
+hard at a = −8 m/s². How far until it stops?
+Know: v₀ = 20, v = 0, a = −8. Want Δx, don't care about t → equation (3):
 
-**Worked example — crossing a speed bump zone.** A driver slows from 50 km/h
-(13.9 m/s) to 15 km/h (4.2 m/s) over 40 m approaching a bump. Deceleration?
-Equation (3): a = (v² − v₀²)/(2Δx) = (4.2² − 13.9²)/80 ≈ **−2.2 m/s²** —
-comfortable braking (panic braking is ~−8 m/s²).
+    Formula:    v² = v₀² + 2aΔx  →  Δx = (v² − v₀²) / 2a
+    Substitute: Δx = (0 − 20²) / (2 × −8) = 400/16 = 25 m
+
+Note the v²: braking distance scales with the *square* of speed. The same car
+at 36 km/h (10 m/s) stops in 100/16 ≈ 6 m — double the speed, quadruple the
+distance. (This is exactly why speed bumps exist.)
+
+**Worked example — crossing a speed bump zone.** A driver slows from 54 km/h
+(15 m/s) to 18 km/h (5 m/s) over 40 m approaching a bump. Deceleration?
+
+    Formula:    a = (v² − v₀²) / 2Δx        (equation 3, rearranged)
+    Substitute: a = (5² − 15²) / (2 × 40) = −200/80 = −2.5 m/s²
+
+Comfortable braking (panic braking is ~−8 m/s²).
 
 ## 3.3 Free fall
 
@@ -63,8 +70,12 @@ a = g ≈ 9.8 m/s² downward, regardless of mass. Free fall is just the suvat
 equations with a = −g (taking up as positive).
 
 **Worked example.** Drop a stone from a 20 m bridge. Time to hit water:
-Δx = ½gt² → t = √(2×20/9.8) ≈ **2.0 s**. Impact speed: v = gt ≈ **20 m/s**
-(72 km/h — why falling from height is dangerous).
+
+    Formula:    Δx = ½gt²  →  t = √(2Δx/g)
+    Substitute: t = √(2 × 20 / 9.8) ≈ 2.0 s
+
+Impact speed: v = gt = 9.8 × 2.0 ≈ **20 m/s** (72 km/h — why falling from
+height is dangerous).
 
 Useful symmetry: a projectile takes the same time up as down, and returns to
 launch height at launch speed.
@@ -89,8 +100,10 @@ Time links the two axes. Standard results (launch and landing at same height):
 CC BY-SA 3.0.*
 
 **Worked example.** Ball kicked at 20 m/s, 30° above horizontal.
-t = 2×20×0.5/9.8 ≈ 2.04 s. R = 400 × sin 60° / 9.8 ≈ **35.4 m**.
-H = 400 × 0.25 / 19.6 ≈ **5.1 m**.
+
+    t = 2v₀ sin θ / g   = 2 × 20 × 0.5 / 9.8      ≈ 2.04 s
+    R = v₀² sin 2θ / g  = 400 × sin 60° / 9.8     ≈ 35.4 m
+    H = v₀² sin²θ / 2g  = 400 × 0.25 / 19.6       ≈ 5.1 m
 
 ## 3.5 Relative motion
 
@@ -116,8 +129,8 @@ boat straight across gives ground speed √(4²+3²) = 5 m/s, angled downstream.
 3. A stone is thrown straight up at 15 m/s. Max height? Total time in the air?
 4. A ball rolls off a 1.2 m high table at 3 m/s (horizontally). How far from
    the table's edge does it land?
-5. A driver at 80 km/h has 1.0 s reaction time, then brakes at −7 m/s². Total
-   stopping distance?
+5. A driver at 72 km/h has 1.0 s reaction time, then brakes at −8 m/s². Total
+   stopping distance? Compare with the same driver at 36 km/h.
 
 ??? success "Answers"
 
@@ -126,7 +139,7 @@ boat straight across gives ground speed √(4²+3²) = 5 m/s, angled downstream.
     3. H = v₀²/2g = 225/19.6 ≈ **11.5 m**; t = 2v₀/g ≈ **3.06 s**.
     4. Fall time: t = √(2×1.2/9.8) ≈ 0.495 s → horizontal distance 3 × 0.495 ≈
        **1.48 m**.
-    5. 80 km/h = 22.2 m/s. Reaction: 22.2 m. Braking: v²/2a = 493/14 ≈ 35.2 m.
-       Total ≈ **57 m**. (At 50 km/h the same sum is ≈ 28 m — half. Speed limits
-       are kinematics.)
+    5. 72 km/h = 20 m/s. Reaction: d = vt = 20 m. Braking: Δx = v²/2a =
+       400/16 = 25 m. Total = **45 m**. At 36 km/h (10 m/s): 10 + 100/16 ≈
+       **16 m** — under half. Speed limits are kinematics.
 
